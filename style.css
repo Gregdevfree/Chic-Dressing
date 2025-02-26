@@ -1,0 +1,213 @@
+/*
+Theme Name:		 chicdressing
+Theme URI:		 http://childtheme-generator.com/
+Description:	 chicdressing is a child theme of Ashe, created by ChildTheme-Generator.com
+Author:			 Chic Dressing
+Author URI:		 http://childtheme-generator.com/
+Template:		 ashe
+Version:		 1.0.0
+Text Domain:	 chicdressing
+*/
+
+
+/*
+    Add your custom styles here
+*/
+
+/* Local fonts */
+
+/* fontello */
+@font-face {
+    font-display: swap;
+    font-family: 'fontello';
+    src: url('./fonts/fontello.woff2') format('woff2');
+}
+
+/* kalam-regular - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Kalam';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/kalam-v16-latin-regular.woff2') format('woff2');
+    src: url('./fonts/Kalam-regular.woff') format('woff');
+}
+  
+/* kalam-700 - latin */
+@font-face {
+    font-display: swap; 
+    font-family: 'Kalam';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./fonts/kalam-v16-latin-700.woff2') format('woff2'); 
+    src: url('./fonts/Kalam-Bold.woff') format('woff');
+}
+  
+/* open-sans-regular - latin */
+@font-face {
+    font-display: swap; 
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/open-sans-v40-latin-regular.woff2') format('woff2');
+    src: url('./fonts/OpenSans-VariableFont_wdth,wght.woff') format('woff');
+    src: url('./fonts/OpenSans-VariableFont_wdth,wght.ttf') format('truetype');
+}
+  
+/* open-sans-italic - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 400;
+    src: url('./fonts/open-sans-v40-latin-italic.woff2') format('woff2');
+    src: url('./fonts/OpenSans-Italic-VariableFont_wdth,wght.woff') format('woff');
+    src: url('./fonts/OpenSans-Italic-VariableFont_wdth,wght.ttf') format('truetype');
+}
+  
+/* open-sans-600 - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: url('./fonts/open-sans-v40-latin-600.woff2') format('woff2');
+    src: url('./fonts/OpenSans-VariableFont_wdth,wght.woff') format('woff');
+    src: url('./fonts/OpenSans-VariableFont_wdth,wght.ttf') format('truetype');
+}
+  
+/* open-sans-700 - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./fonts/open-sans-v40-latin-700.woff2') format('woff2');
+    src: url('./fonts/OpenSans-VariableFont_wdth,wght.woff') format('woff');
+    src: url('./fonts/OpenSans-VariableFont_wdth,wght.ttf') format('truetype');
+}
+  
+/* playfair-display-regular - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/playfair-display-v37-latin-regular.woff2') format('woff2');
+    src: url('./fonts/PlayfairDisplay-VariableFont_wght.woff') format('woff');
+}
+  
+/* playfair-display-italic - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-weight: 400;
+    src: url('./fonts/playfair-display-v37-latin-italic.woff2') format('woff2'); 
+    src: url('./fonts/PlayfairDisplay-Italic-VariableFont_wght.woff') format('woff');
+}
+   
+body .page-content, .page-content select, .page-content input, .page-content textarea, .page-content .post-author a, .page-content .ashe-widget a, .page-content .comment-author {
+    color: #000000;
+    font-size: 12px;
+}
+
+
+body .header-logo a {
+    color:#000000;
+    font-size: 116px;
+    text-shadow: 8px 9px 11px #d0527a;
+    transform: rotate(-9deg);
+}
+
+.text-center{
+    text-align:center;
+}
+
+.chic-bouton{
+    color: #ffffff;
+    background-color: #333333;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 12px;
+    border: none;
+    cursor: pointer;
+    padding: 12px;
+    font-size: 14px;
+}
+/* augmentation de la taille de police du lien cliquable à 24px pour améliorer l'accessibilité */
+#main-menu li a {
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+/* changement couleur du lien après clic */
+#main-nav li.current-menu-item > a {
+    color: #5F5721 !important;
+}
+
+#featured-slider{
+    margin-bottom:30px;
+}
+#chic-products{
+    padding:0 40px;
+}
+.chic-title{
+    font-family: 'Kalam';
+    font-size: 52px;
+    text-decoration: inherit;
+    text-transform: uppercase;
+    transform: rotate(-2deg);
+    margin:30px 40px;
+    text-align:center;
+    color: #93435a!important;
+    line-height: 48px;
+}
+#chic-products ul.products li.product{
+    background: #f6f6f6;
+    padding-bottom: 20px;
+}
+
+/*catégories et dates posts + catégorie shop et prix en noir*/
+.posted_in, .woocommerce-Price-amount.amount, .rpwwt-post-title {
+    font-size: 18px; 
+    color: #000000 !important;
+}
+
+.post-date, .rpwwt-post-categories {
+    font-size: 16px; 
+    color: #000000 !important; 
+}
+
+.post-categories a {
+    font-size: 24px; 
+    color: #5F5721; 
+    margin-left: 10px;
+}
+
+.add_to_cart_button {
+    font-size: 16px !important;
+    color: #5F5721 !important; 
+} 
+
+.woocommerce .button {
+    font-size: 18px;
+}
+
+.read-more a, .post-categories, .posted_in a, .page-content .ashe-widget.widget_text a {
+    font-size: 18px; 
+    color: #5F5721;
+}
+
+/*étiquettes shop*/
+.tagged_as {
+    font-size: 14px; 
+    color: #000000;
+}
+
+.tagged_as a {
+    font-size: 14px; 
+    color: #5F5721;
+}
+ 
